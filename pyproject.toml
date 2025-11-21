@@ -1,0 +1,13 @@
+[project]
+name = "minimoi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fiddle>=0.3.0",
+    "jupyter>=1.1.1",
+    "marimo>=0.18.0",
+    "notebook>=7.5.0",
+    "pyzmq>=27.1.0",
+]
