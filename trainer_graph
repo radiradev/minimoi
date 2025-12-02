@@ -1,0 +1,15 @@
+graph {
+	graph [overlap=false]
+	node [fontname=Courier fontsize=10 margin=0 shape=none]
+	edge [color="#00000030" penwidth=3]
+	4 [label=<<table border="0" cellspacing="0" cellborder="1" cellpadding="3"><tr><td colspan="2" bgcolor="#add8e6" style="solid"><font point-size="8">Config:</font>&nbsp;Dataset</td></tr><tr><td align="right" bgcolor="#eeeeee">name</td><td align="left">&#x27;era&#x27;</td></tr><tr><td align="right" bgcolor="#eeeeee">size</td><td align="left">1000</td></tr></table>>]
+	3:0:c -- 4:c [color="#8aacb780"]
+	3 [label=<<table border="0" cellspacing="0" cellborder="1" cellpadding="3"><tr><td colspan="2" bgcolor="#ffa07a" style="solid"><font point-size="8">Config:</font>&nbsp;Graph</td></tr><tr><td align="right" bgcolor="#eeeeee">dataset</td><td align="left"><table border="0" cellspacing="0" cellborder="1" cellpadding="3" style="solid"><tr><td port="0" bgcolor="#add8e6" style="solid"></td></tr></table></td></tr><tr><td align="right" bgcolor="#eeeeee">nodes</td><td align="left">15</td></tr></table>>]
+	2:1:c -- 3:c [color="#cb806180"]
+	2 [label=<<table border="0" cellspacing="0" cellborder="1" cellpadding="3"><tr><td colspan="2" bgcolor="#fff8dc" style="solid"><font point-size="8">Config:</font>&nbsp;Model</td></tr><tr><td align="right" bgcolor="#eeeeee">graph</td><td align="left"><table border="0" cellspacing="0" cellborder="1" cellpadding="3" style="solid"><tr><td port="1" bgcolor="#ffa07a" style="solid"></td></tr></table></td></tr><tr><td align="right" bgcolor="#eeeeee">hidden_dim</td><td align="left">64</td></tr></table>>]
+	1:2:c -- 2:c [color="#cbc6b080"]
+	1 [label=<<table border="0" cellspacing="0" cellborder="1" cellpadding="3"><tr><td colspan="2" bgcolor="#90ee90" style="solid"><font point-size="8">Config:</font>&nbsp;Task</td></tr><tr><td align="right" bgcolor="#eeeeee">model</td><td align="left"><table border="0" cellspacing="0" cellborder="1" cellpadding="3" style="solid"><tr><td port="2" bgcolor="#fff8dc" style="solid"></td></tr></table></td></tr><tr><td align="right" bgcolor="#eeeeee">task_type</td><td align="left">&#x27;classifier&#x27;</td></tr></table>>]
+	0:3:c -- 1:c [color="#73be7380"]
+	0:4:c -- 4:c [color="#8aacb780"]
+	0 [label=<<table border="0" cellspacing="0" cellborder="1" cellpadding="3"><tr><td colspan="2" bgcolor="#ffc0cb" style="solid"><font point-size="8">Config:</font>&nbsp;Trainer</td></tr><tr><td align="right" bgcolor="#eeeeee">task</td><td align="left"><table border="0" cellspacing="0" cellborder="1" cellpadding="3" style="solid"><tr><td port="3" bgcolor="#90ee90" style="solid"></td></tr></table></td></tr><tr><td align="right" bgcolor="#eeeeee">dataset</td><td align="left"><table border="0" cellspacing="0" cellborder="1" cellpadding="3" style="solid"><tr><td port="4" bgcolor="#add8e6" style="solid"></td></tr></table></td></tr><tr><td align="right" bgcolor="#eeeeee">epochs</td><td align="left">5</td></tr></table>>]
+}
