@@ -1,8 +1,8 @@
-from models.tasks.task import MockTask
-from datasets.dataset import MockDataset
+from models.tasks.task import Task
+from datasets.dataset import Dataset
 
 class Trainer:
-    def __init__(self, task: MockTask, dataset: MockDataset, epochs: int = 1):
+    def __init__(self, task: Task, dataset: Dataset, epochs: int = 1):
         self.task = task
         self.dataset = dataset
         self.epochs = epochs
